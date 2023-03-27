@@ -6,9 +6,8 @@ export default function FeedbackOptionsItem({ name, func }) {
     <li>
       <button
         className={css['feedback-options-button']}
-        onClick={event => {
-          func(event.target.textContent);
-        }}
+        name={name}
+        onClick={func}
       >
         {name}
       </button>

@@ -11,10 +11,10 @@ export default function Statistics({ appState, total, positivePerc }) {
         <StatisticsItem key={item} name={item} value={appState[item]} />
       ))}
       <li className={css.statistics__item} key="total">
-        Total: {total}
+        Total: {total()}
       </li>
       <li className={css.statistics__item} key="pos-feedback">
-        Positive feedbacks: {positivePerc}%
+        Positive feedbacks: {positivePerc()}%
       </li>
     </ul>
   );
@@ -25,7 +25,7 @@ Statistics.propTypes = {
     good: PropTypes.number,
     neutral: PropTypes.number,
     bad: PropTypes.number,
-  }),
-  total: PropTypes.number,
-  positivePerc: PropTypes.number,
+  }).isRequired,
+  total: PropTypes.func.isRequired,
+  positivePerc: PropTypes.func.isRequired,
 };

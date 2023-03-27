@@ -3,11 +3,11 @@ import FeedbackOptionsItem from './FeedBackOptionsItem';
 import css from './feedback.module.css';
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
-  const stateKeys = Object.keys(options);
+  const optionsKeys = Object.keys(options);
 
   return (
     <ul className={css['feedback-options-list']}>
-      {stateKeys.map(item => (
+      {optionsKeys.map(item => (
         <FeedbackOptionsItem key={item} name={item} func={onLeaveFeedback} />
       ))}
     </ul>
