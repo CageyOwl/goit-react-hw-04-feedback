@@ -1,0 +1,12 @@
+.statistics {
+    list-style: none;
+    padding: 0;
+}
+
+.statistics__item {
+    font-size: 28px;
+}
+
+.statistics__item-category {
+    text-transform: capitalize;
+}

@@ -1,0 +1,17 @@
+.feedback-options-list {
+    display: flex;
+    padding: 12px;
+    gap: 8px;
+    list-style: none;
+}
+
+.feedback-options-button {
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+.feedback-options-button:hover {
+    background-color: #33a;
+    color: #fff
+}
